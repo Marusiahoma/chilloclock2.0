@@ -1,2 +1,4 @@
 # chilloclock2.0
-| Задача | Описание | Статус |                                                                                                                                     |fjerjh;ienhpiue| nejn[erjnpjo| ruiofw  pihfnpiw|
+x = int(input())
+if x > o:
+  print(x)
