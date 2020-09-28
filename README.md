@@ -1,3 +1,3 @@
 # chilloclock2.0
-| Задача | Олыьсльыдсь | мьывмьщдвм | 
+| Задача | Описание | Статус | 
 |fjerjh;ienhpiue| nejn[erjnpjo| ruiofw  pihfnpiw|
