@@ -9,16 +9,99 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-    <h5 class="my-0 mr-md-auto font-weight-normal">Название компании</h5>
-    <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="{% url 'main' %}">Возможности </a>
-        <a class="p-2 text-dark" href="{% url 'create' %}">ghghghg </a>
-        <a class="p-2 text-dark" href="{% url 'shop' %}">предприятия </a>
-    </nav>
-    <a class="btn btn-outline-primary" href="#">зарегистрироваться</a>
-</div>
+<div class="btnReglog">
+        <button class="btnLogin">Войти</button>
+        <button class="btnReg">Регистрация</button>
+    </div>
+<style>
+    .btnReglog {
+    position: absolute;
+    top:10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+}
 
+
+.btnLogin {
+    font-size: small;
+    border: 1px solid;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    border-radius: 16px;
+    padding: 8px;
+    font-size: 15px;
+    margin-bottom: 5px;
+    transition:.5s;
+}
+
+.btnLogin:hover {
+    color: rgb(0, 238, 255);
+    border:2px solid rgb(0, 238, 255);
+}
+
+.btnReg {
+    font-size: small;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    border-radius: 16px;
+    padding: 8px;
+    font-size: 15px;
+    transition:.5s;
+    border: 1px solid;
+}
+.btnReg:hover {
+    font-size: ;
+    color: rgb(0, 238, 255);
+    border:2px solid rgb(0, 238, 255);
+}
+</style>
+
+    <h1> Flex_Shop_3D </h1>
+    <div class="buttonGroupNav">
+        <button>Личный Кабинет</button>
+        <button href="{% url 'shop' %}">О нас</a>
+    </div>
+<style>
+    .buttonGroupNav {
+    text-align: center;
+}
+
+.buttonGroupNav > button {  /*Кнопки навигации*/
+    font-size: 18px;
+    margin: top 5px;
+    text-align: center;
+    border-radius:16px;
+    border: 1px solid rgba(0, 0, 0, 0.473);
+    /* width:150px;
+    height: 40px; */
+    width: 220px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color:rgba(255, 0, 0, 0) ;
+    transition:0.5s;
+}
+
+
+
+.buttonGroupNav > button:hover { /*Эффект при наведении*/
+    color: rgb(0, 238, 255);
+    /* background-color: rgba(255, 255, 255, 0.185); */
+    border:2px solid rgb(0, 238, 255);
+    font-size: 20px;
+}
+body {
+    text-align: center;
+    background-image: url(../img/123.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 1000px;
+    left: 60%;
+}
+</style>
 <div class="container">
    {% block content %}{% endblock %}
 </div>
