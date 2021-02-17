@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex_Shop_3D</title>
+</head>
+<body>
+<h1><a href="{% url 'main' %}">Flex_Shop_3D</a></h1>
+<div class="BlockToAkk">
+    <hr class="podcherknul">
+    <hr class="podcherknul2">
+    <hr class="podcherknul3">
+    <hr class="podcherknul4">
+    <div class="container">
+        <button class="changepass"> <a href="{% url 'password_change' %}">Сменить пароль</a> </button>
+        <button class="zapzanovo"><a href="{% url 'edit' %}">Заполнить заново</a></button>
+        <button class="Prodat"> <a href="сюда">Продать</a> </button>
+        <img src="{% static 'mysite/image/Belka-letyaga-1.png' %}" alt="Profile pic">
+        <h2 class="t">Boss_of_the_GYM</h2><br>
+        <h2 class="tt">Denchez</h2><br>
+        <h2 class="ttt">Dmaster2012@duck.bra</h2><br>
+        <h2 class="tttt">7-777-77-42-01</h2><br>
+    </div>
+</div>
+<style>
+    * {
+    margin:0 ;
+    padding:0 ;
+}
+
+
+
+.BlockToAkk{
+    padding:10px;
+    padding-top:120px;
+    width:40%;
+    height: 75%;
+    margin-left: 30%;
+    margin-right: 500px;
+    background-color: rgba(0, 0, 0, 0.274);
+    border: 1px solid black;
+
+}
+
+.BlockToAkk > img{
+    position: absolute;
+    left: 670px;
+    top: 140px;
+    height: 200px;
+    width: 200px;
+
+}
+
+.changepass{
+    position: absolute;
+    font-size:15px;
+    color: black;
+    margin-top: 460px;
+    right: 581px;
+    border-radius: 16px;
+    width: 160px;
+    height: 20px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid black;
+    transition:.5s;
+    right: 700px;
+
+}
+
+
+
+.zapzanovo{
+    position: absolute;
+    right: 758px;
+    font-size:15px;
+    color: black;
+    margin-top: 460px;
+    border-radius: 16px;
+    width: 160px;
+    height: 20px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid black;
+    transition:.5s;
+    right: 535px;
+}
+
+
+.zapzanovo:hover{
+    color: rgb(0, 238, 255);
+    border: 2px solid rgb(0, 238, 255);
+
+}
+
+.zapzanovo > a:hover{
+    color: rgb(0, 238, 255);
+
+}
+
+.t{
+
+    position: absolute;
+    top: 140px;
+    padding: 200px;
+    margin-top: 50px;
+    right: 406px;
+}
+
+
+.tt{
+    position: absolute;
+    top: 210px;
+    right: 510px;
+    padding: 200px;
+    margin-top: 50px;
+    right: 457px;
+}
+
+.ttt{
+    position: absolute;
+    top: 270px;
+    right: 420px;
+    padding: 200px;
+    margin-top: 50px;
+    right: 380px;
+
+}
+
+.tttt{
+    position: absolute;
+    top: 340px;
+    right: 470px;
+    padding: 200px;
+    margin-top: 50px;
+    right: 430px;
+
+}
+
+.podcherknul{
+    position: absolute;
+   color: black;
+   border-color: black;
+   width: 300px;
+    top: 430px;
+    right: 600px;
+    right: 553px;
+}
+
+.podcherknul2{
+    position: absolute;
+   color: black;
+   border-color: black;
+   width: 300px;
+    top: 495px;
+    right: 600px;
+    right: 553px;
+}
+
+.podcherknul3{
+    position: absolute;
+   color: black;
+   border-color: black;
+   width: 300px;
+    top: 555px;
+    right: 600px;
+    right: 553px;
+}
+
+.podcherknul4{
+    position: absolute;
+   color: black;
+   border-color: black;
+   width: 300px;
+    top: 622px;
+    right: 600px;
+    right: 553px;
+}
+.Prodat{
+    position: absolute;
+    font-size:15px;
+    color: black;
+    margin-top: 500px;
+    right: 670px;
+    border-radius: 16px;
+    width: 160px;
+    height: 20px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid black;
+    transition:.5s;
+    right: 620px;
+
+
+}
+body {
+    text-align: center;
+    background: linear-gradient(to top, #c8a2c8, #6495ED);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 700px;
+    left: 60%;
+}
+.BlockToAkk > img{
+position: absolute;
+left: 670px;
+top: 140px;
+height: 200px;
+width: 200px;
+
+}
+h1 {
+    line-height: 106px;
+    font-size: 50px;
+}
+a {
+    text-decoration:none;
+    color:black;
+}
+</style>
+</body>
+</html>
+
