@@ -9,7 +9,7 @@
     <title>Flex_Shop_3D</title>
 </head>
 <body>
-    <h1><a href="{% url 'main' %}">Flex_Shop_3D</a></h1>
+    <h1><a href="{% url 'main' %}">DBshop</a></h1>
     <div class="BlockwithForm">
             <form action="№" class="registr" method="POST">
                 <input type="text" placeholder="Name"><br> <br>
@@ -18,15 +18,15 @@
                 <input type="text" placeholder="Phone number"><br> <br>
                 <input type="password" placeholder="password"><br> <br>
                 <input type="password" placeholder="password"><br> <br>
-                <button id="btGotIt"><a href="/index.html">Готово</a></button>
-                <button id="BackFromreg"><a href="/index.html">Назад</a></button>
+                <button id="btGotIt"><a href="{% url 'main' %}">Готово</a></button>
+                <button id="BackFromreg"><a href="{% url 'password_reset' %}">Назад</a></button>
             </form>
     </div>
 <style>
 .BlockwithForm > form > input{
     text-align:center;
-    background-color: rgba(0, 0, 0, 0.342);
-    color:rgb(0, 238, 255);
+    background-color: rgba(30, 30, 30, 30.342);
+    color: black;
     border-radius: 15px;
     border: 1px solid black;
     width: 300px;
@@ -118,7 +118,7 @@
 }
 body {
     text-align: center;
-    background: linear-gradient(to top, #c8a2c8, #6495ED);
+    background-color: white;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

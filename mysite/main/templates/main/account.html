@@ -17,12 +17,12 @@
     <div class="container">
          <a class="changepass" href="{% url 'password_change' %}">Сменить пароль</a>
         <button class="zapzanovo"><a href="{% url 'edit' %}">Заполнить заново</a></button>
-        <button class="Prodat"> <a href="сюда">Продать</a> </button>
+        <button class="Prodat"> <a href="{% url 'create' %}">Продать</a> </button>
         <img src="{% static 'mysite/image/Belka-letyaga-1.png' %}" alt="Profile pic">
-        <h2 class="t">Boss_of_the_GYM</h2><br>
+        <!-- <h2 class="t">Boss_of_the_GYM</h2><br>
         <h2 class="tt">Denchez</h2><br>
         <h2 class="ttt">Dmaster2012@duck.bra</h2><br>
-        <h2 class="tttt">7-777-77-42-01</h2><br>
+        <h2 class="tttt">7-777-77-42-01</h2><br> -->
     </div>
 </div>
 <style>

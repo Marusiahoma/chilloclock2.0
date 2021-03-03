@@ -30,8 +30,11 @@ def account(request):
     return render(request, 'main/account.html')
 
 
-def change(request):
-    return render(request, 'main/change.html')
+def base(request):
+    return render(request, 'main/main.html')
+
+
+
 
 
 def create(request):
