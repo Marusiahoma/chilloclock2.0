@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html lang="zzx">
+<!doctype html>
+<html lang="ru">
 <head>
-    <link rel="stylesheet" href="../font/wire_one.css">
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flex_Shop_3D</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
 </head>
-<body class="LOG">
+<body>
 <style>
     a {
     text-decoration:none;
@@ -133,13 +132,13 @@
 
 }
 .BackFromChange{
-    font-size:15px;
+    font-size:13px;
     color: black;
     margin-top: 5px;
-    border-radius: 16px;
+    border-radius: 18px;
     width: 345px;
-    height: 30px;
-    font-size: 16px;
+    height: 35px;
+    font-size: 19px;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid black;
     transition:.5s;
@@ -170,15 +169,15 @@ body {
 }
 </style>
     <h1><a href="{% url 'main' %}">DBshop</a></h1>
-    <div class="BlockwithFormToLogin">
+    <div class="container">
    {% block content %}{% endblock %}
-            <form action="№" class="registr" method="POST">
+            <!--<form action="№" class="registr" method="POST">
                 <input type="email" placeholder="Email" id="LogInp"><br> <br>
                 <input type="password" placeholder="password"  id="LogInp"><br> <br>
                 <button class="btGotItLOG"><a href="{% url 'main' %}">Готово</a></button>
                 <button class="BackFromLog"><a href="{% url 'main' %}">Назад</a></button>
                 <button class="BackFromChange"><a href="{% url 'base' %}">Забыли пароль</a></button>
-            </form>
+            </form>-->
 
     </div>
 </body>

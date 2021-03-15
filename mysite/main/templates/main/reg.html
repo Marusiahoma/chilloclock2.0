@@ -1,17 +1,18 @@
-<!DOCTYPE html>
-<html lang="zzx">
+<!doctype html>
+<html lang="ru">
 <head>
-    <link rel="stylesheet" href="../font/wire_one.css">
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flex_Shop_3D</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>{% block title %}{% endblock %}</title>
+
 </head>
 <body>
     <h1><a href="{% url 'main' %}">DBshop</a></h1>
     <div class="BlockwithForm">
-            <form action="№" class="registr" method="POST">
+        {% block content %}{% endblock %}
+            <!--<form action="№" class="registr" method="POST">
                 <input type="text" placeholder="Name"><br> <br>
                 <input type="text" placeholder="NickName"><br> <br>
                 <input type="email" placeholder="Email"><br> <br>
@@ -20,7 +21,7 @@
                 <input type="password" placeholder="password"><br> <br>
                 <button id="btGotIt"><a href="{% url 'main' %}">Готово</a></button>
                 <button id="BackFromreg"><a href="{% url 'password_reset' %}">Назад</a></button>
-            </form>
+            </form>-->
     </div>
 <style>
 .BlockwithForm > form > input{

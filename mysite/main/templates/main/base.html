@@ -8,11 +8,16 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
+{% if not user.is_authenticated %}
+{{ user }}
 <div class="btnReglog">
-
     <button class="btnLogin"><a href="{% url 'log' %}">Войти</a></button>
-    <button class="btnReg"><a href="{% url 'reg' %}">Регистрация</a></button>
+    <button class="btnReg"><a href="{% url 'register' %}">Регистрация</a></button>
     </div>
+{% else %}
+<a href="{% url 'logout' %}">выйти</a>
+{% endif %}
+
 <style>
     * {
     margin:0 ;
@@ -92,7 +97,7 @@ button {
 }
 body {
     text-align: center;
-    background: linear-gradient(to top, #c8a2c8, #6495ED);
+    background - color: (255, 255, 255);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -244,7 +249,7 @@ a {
 
     <h1> DBshop </h1>
     <div class="buttonGroupNav">
-        <button ><a href="{% url 'account' %}">Личный Кабинет</a></button>
+        <button ><a href="{% url 'acc' %}">Личный Кабинет</a></button>
         <button>О нас</button>
     </div>
 <div class="conteiner">

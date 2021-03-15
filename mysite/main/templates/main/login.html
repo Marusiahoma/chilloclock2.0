@@ -1,12 +1,12 @@
-{% extends "main.html" %}
+{% extends "main/Log in.html" %}
 
-{% block title %}Вход{% endblock %}
+
 {% block content %}
     <h1>Вход</h1>
     <p>Пожалуйста, заполните формы ниже:</p>
-    <form action="." method="post">
+    <form action="." class="BlockwithFormToLogin" method="post">
         {{ form.as_p }}
         {% csrf_token %}
-        <p><input type="submit" value="Log-in"></p>
+        <p><input type="submit" class="btGotItLOG"  vaxlue="Log-in"></p>
     </form>
 {% endblock %}

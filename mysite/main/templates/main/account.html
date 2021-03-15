@@ -1,31 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="ru">
 {% load static %}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Flex_Shop_3D</title>
+    <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-<h1><a href="{% url 'main' %}">Flex_Shop_3D</a></h1>
+<h1><a href="{% url 'main' %}">DBshop</a></h1>
 <div class="BlockToAkk">
-    <hr class="podcherknul">
+    {% block content %}{% endblock %}
+    <!--<hr class="podcherknul">
     <hr class="podcherknul2">
     <hr class="podcherknul3">
     <hr class="podcherknul4">
-    <div class="container">
-         <a class="changepass" href="{% url 'password_change' %}">Сменить пароль</a>
-        <button class="zapzanovo"><a href="{% url 'edit' %}">Заполнить заново</a></button>
-        <button class="Prodat"> <a href="{% url 'create' %}">Продать</a> </button>
+    <div class="container"> -->
+        <!-- <a href="{% url 'password_change' %}">Сменить пароль</a>
+        <a href="{% url 'edit' %}">Заполнить заново</a>
+        <a href="{% url 'create' %}">Продать</a>
         <img src="{% static 'mysite/image/Belka-letyaga-1.png' %}" alt="Profile pic">
-        <!-- <h2 class="t">Boss_of_the_GYM</h2><br>
+         <h2 class="t">Boss_of_the_GYM</h2><br>
         <h2 class="tt">Denchez</h2><br>
         <h2 class="ttt">Dmaster2012@duck.bra</h2><br>
         <h2 class="tttt">7-777-77-42-01</h2><br> -->
     </div>
-</div>
-<style>
+<a href="{% url 'edit' %}">edit</a>
+<!-- <style>
     * {
     margin:0 ;
     padding:0 ;
@@ -227,7 +229,7 @@ a {
     text-decoration:none;
     color:black;
 }
-</style>
+</style>-->
 </body>
 </html>
 

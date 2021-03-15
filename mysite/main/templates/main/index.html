@@ -1,20 +1,16 @@
 {% extends 'main/base.html' %}
 
-{% block title %}
-{{ title }}
-{% endblock %}
-
 {% block content %}
-{% if tasks %}
-{% for el in tasks %}
-<div class="alert alert-warning mt-2">
-    <h3>{{ el.title }}</h3>
-    <p>{{ el.task }}</p>
-    <img>{{ el.img }}</img>
-</div>
-{% endfor %}
-{% else %}
-<p> pain </p>
-{% endif %}
+    {% if tasks %}
+        {% for el in tasks %}
+            <div class="alert alert-warning mt-2">
+                <h3>{{ el.title }}</h3>
+                <p>{{ el.task }}</p>
+                <img>{{ el.img }}</img>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p> pain </p>
+    {% endif %}
 {% endblock %}
 

@@ -1,5 +1,5 @@
-{% extends "Lob in.html" %}
-{% block title %}Вход{% endblock %}
+{% extends "main/Log in.html" %}
+
 {% block content %}
     <h1>Авторизация</h1>
     {% if form.errors %}
@@ -7,15 +7,15 @@
             Ваши имя пользователя и пароль не совпали. Попробуйте еще раз
         </p>
     {% else %}
-        <p>Пожалуйста, используйте формы ниже для авторизации. Если у вас нет аккаунта <a href="{% url "register" %}">регестрируйтесь</a></p>
+        <p>Пожалуйста, используйте формы ниже для авторизации. Если у вас нет аккаунта <a href="{% url 'register' %}">регестрируйтесь</a></p>
     {% endif %}
-    <div class="login-form">
-        <form action="{% url 'login' %}" method="post">
+    <div>
+        <form  action="{% url 'login' %}"  method="post">
             {{ form.as_p }}
             {% csrf_token %}
             <input type="hidden" name="next" value="{{ next }}"/>
-            <p><input type="submit" value="Log-in"></p>
+            <p><input type="submit" class="btGotItLOG" value="Log-in"></p>
         </form>
-        <p><a href="{% url "password_reset" %}">Забыл пароль??????????????</a></p>
+        <p><a href="{% url 'password_reset' %}" class="BackFromChange">Забыл пароль?</a></p>
     </div>
 {% endblock %}

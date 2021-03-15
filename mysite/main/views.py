@@ -19,22 +19,20 @@ def shop(request):
 
 
 def Log_in(request):
-    return render(request, 'main/Log in.html')
+    return render(request, 'main/log_in.html')
 
 
-def reg(request):
-    return render(request, 'main/reg.html')
+def acc(request):
+    return render(request, 'main/acc.html')
 
 
+@login_required
 def account(request):
     return render(request, 'main/account.html')
 
 
 def base(request):
     return render(request, 'main/main.html')
-
-
-
 
 
 def create(request):
@@ -49,7 +47,7 @@ def create(request):
 
     form = TaskForm()
     context = {
-        'form' : form,
+        'form': form,
         'error': error
     }
     return render(request, 'main/create.html', context)
@@ -87,13 +85,9 @@ def edit(request):
             messages.error(request, 'Ошибка в обновление профиля')
     else:
         user_form = UserEditForm(instance=request.user)
-        profile_form = ProfileEditForm(instance=request.user.profile)
+        profile_form = ProfileEditForm(instance=request.user)
     return render(request, 'main/edit.html',
                   {'user_form': user_form, 'profile_form': profile_form})
-
-
-def dashboard(request):
-    return render(request, 'main/dashboard.html', {'section': 'dashboard'})
 
 
 def register(request):

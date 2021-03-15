@@ -5,7 +5,7 @@ from django.conf import settings
 class Task(models.Model):
     title = models.CharField('Название', max_length=60)
     task = models.TextField('Описание')
-    img = models.ImageField("Картинка", upload_to='article')
+    img = models.ImageField("Картинка", upload_to='article', blank=True, null=True, default=None)
 
     def __str__(self):
         return self.title

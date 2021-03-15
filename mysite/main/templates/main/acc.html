@@ -1,0 +1,18 @@
+{% extends 'main/account.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+{% if Profile %}
+{% for el in Profile %}
+    <div class="alert alert-warning mt-2">
+        {{ el.user }}
+        {{ el.date_of_birth }}
+    </div>
+{% endfor %}
+{% else %}
+<p> pain </p>
+{% endif %}
+{% endblock %}
