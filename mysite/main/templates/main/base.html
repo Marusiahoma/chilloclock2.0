@@ -9,7 +9,6 @@
 </head>
 <body>
 {% if not user.is_authenticated %}
-{{ user }}
 <div class="btnReglog">
     <button class="btnLogin"><a href="{% url 'log' %}">Войти</a></button>
     <button class="btnReg"><a href="{% url 'register' %}">Регистрация</a></button>
